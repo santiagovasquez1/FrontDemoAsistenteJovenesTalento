@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-chatbot</title>
+</head>
+<body>
+    <div class="principal">
+        <div class="encabezado">
+            <h1>Te saludo humano</h1>
+        </div>
+        <form class="lateral">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div>
+                <p class="consultas">
+                    Consultas
+                </p>        
+            </div>
+        </form>
+        <div class="central">
+            <div class="conversation">
+                <div *ngFor="let message of conversation" class="message" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+                    {{ message.message }}
+                </div>
+            </div>
+        </div>
+        <form class="input">
+            <input class="caja_preguntas" [(ngModel)]="pregunta" [ngModelOptions]="{standalone: true}" type="text" placeholder="¿Para qué aplicativo apoyo?" required>
+        </form>   
+        <form class="boton">
+            <button (click)="submit()">Preguntar</button>
+        </form>
+    </div>
+</body>
+</html>

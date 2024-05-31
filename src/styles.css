@@ -1,1 +1,151 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(226, 223, 223);
+}
+.principal {
+  position: relative;
+  width: 1366px;
+  height: 768px;
+  margin: 0 auto; /* Centramos el contenedor principal horizontalmente */
+  background: #FBFBFB;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 2px 0px;
+ 
+
+  width: 95,50%;
+  height: 62px;
+  top: 0;
+  position: relative;
+
+  background: #FFFFFF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08), 0px 12px 20px rgba(0, 0, 0, 0.07);
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
+  color: #0C00FF;
+  padding-left: 150px;
+  
+}
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 30px;
+  gap: 61px;
+
+  position: absolute;
+  width: 220px;
+  height: 720px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08), 0px 12px 20px rgba(0, 0, 0, 0.07);
+}
+
+.consultas {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 8px;
+
+  width: 216px;
+  height: 40px;
+
+  background: #E7E6FF;
+  border: 1px solid #726BFF;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.input {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 16px;
+  gap: 15px;
+
+  position: absolute;
+  width: 891px;
+  height: 72px;
+  left: 307px;
+  top: 678px;
+
+  background: #FFFFFF;
+  border: 1px solid #0C00FF;
+  border-radius: 4px;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 22px;
+  gap: 10px;
+  font-weight: bold;
+
+  position: absolute;
+  width: 80px;
+  height: 18px;
+  left: 1215px;
+  top: 698px;
+
+  background: #000000;
+  border-radius: 20px;
+}
+
+.central {
+  position: absolute;
+  width: 1023px;
+  height: 567px;
+  left: 306px;
+  top: 85px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08), 0px 12px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+
+.logo {
+  width: 140px;
+  height: 93px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.btn_preguntar {
+  background-color: #000000;
+  color: white;
+  border: #000000;
+  font-weight: bold;
+}
+
+.caja_preguntas {
+  width: 820px;
+  height: 52px;
+  border: none;
+  position: absolute;
+  top: 0;
+
+  font-size: 16px;
+}
