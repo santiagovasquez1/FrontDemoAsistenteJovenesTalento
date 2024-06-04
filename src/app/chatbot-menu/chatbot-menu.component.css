@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: rgb(226, 223, 223);
+    font-family: 'Poppins';
 }
 .principal {
     position: relative;
@@ -24,7 +25,6 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08), 0px 12px 20px rgba(0, 0, 0, 0.07);
 
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -53,7 +53,7 @@ body {
 
 .consultas {
     box-sizing: border-box;
-
+    font-family: 'Poppins';;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -179,4 +179,165 @@ button {
     border: none;
     color: white;
     font-size: large;
+}
+
+.cerebro {
+    position: absolute;
+    top: 100px;  /* Ajusta según tus necesidades */
+    left: 20%;  /* Ajusta según tus necesidades */
+    /* cerebro 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 70px;
+height: 70.02px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.Como-funciono {
+    position: absolute;
+    top: 220px;  /* Ajusta según tus necesidades */
+    right: 20;
+    left: 15%;  /* Ajusta según tus necesidades */
+    /* ¿Cómo funciono? */
+
+width: 279px;
+height: 48px;
+
+/* Subtítulo/Mediano */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.lista {
+    /* Frame 42 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 424.5px;
+height: 188px;
+right: 10;
+left: 5%;
+
+/* Primario/P50 */
+background: #E7E6FF;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+top: 300px;
+position: relative;
+}
+
+.chip {
+/* Frame 43 */
+position: absolute;
+top: 100px;  /* Ajusta según tus necesidades */
+left: 50%;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 424.5px;
+height: 138px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
+
+.restricciones {
+    position: absolute;
+    top: 220px;  /* Ajusta según tus necesidades */
+    left: 60%;
+
+width: 262px;
+height: 48px;
+
+/* Subtítulo/Mediano */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.mensaje-restriccion {
+    /* Frame 41 */
+    position: absolute;
+    top: 310px;  /* Ajusta según tus necesidades */
+    left: 50%;
+
+    
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 424.5px;
+height: 210px;
+
+/* Primario/P50 */
+background: #E7E6FF;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+text-align: center;
 }

@@ -22,8 +22,41 @@
         </form>
         <div class="central">
             <div class="conversation">
-                <div *ngFor="let message of conversation" class="message" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
-                    {{ message.message }}
+               <div class="contenedor" *ngIf="conversation.length == 0">
+                    <div class="cerebro" >
+                        <img src="assets/cerebro.png" alt="">
+                    </div>
+                    <div >
+                        <p class="Como-funciono">
+                            ¿ Como funciono ?
+                        </p>
+                    </div>
+                    <div class="lista">
+                        <ol>
+                            <li>Indícame el aplicativo</li>
+                            <br>
+                            <li>Cuéntame el requerimiento que te ha sido asignado, y así poder recomendarte alguna solución exitosa similar.</li>
+                            <br>
+                            <li>Si no te ofrezco una respuesta satisfactoria, prueba formularla nuevamente o profundizando sobre el tema.</li>
+                        </ol>
+                    </div>
+                    <div class="chip">
+                        <img src="assets/chip.png" alt="">
+                    </div>
+                    <div class="restricciones">
+                        <p>Mis restricciones</p>
+                    </div>
+                    <div class="mensaje-restriccion">
+                        <p>
+                            Solo tengo conocimiento sobre los reportes que tu y nuestros compañeros del equipo de soporte me puedan aportar. 
+                            <br>
+                            <br>
+                            Así que si solucionas algún incidente, no dudes en hacérmelo saber subiendo el archivo con la información necesaria.
+                        </p>
+                    </div>
+                </div> 
+                    <div *ngFor="let message of conversation" class="message" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+                        {{ message.message }}
                 </div>
             </div>
         </div>

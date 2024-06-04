@@ -53,6 +53,7 @@ export class ChatbotMenuComponent {
       });
   }
 
+
   sendMessage() {
     if (this.userMessage.trim() === '') return;
 
@@ -67,3 +68,29 @@ export class ChatbotMenuComponent {
     this.userMessage = '';
   }
 }
+
+// export class EjemploComponent {
+
+//   constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+//   // eliminarElementoPorID(id: string) {
+//   //   const elemento = this.el.nativeElement.querySelector(`#${id}`);
+//   //   if (elemento) {
+//   //     this.renderer.removeChild(this.el.nativeElement, elemento);
+//   //   }
+//   // }
+
+//   eliminarElementoPorClase(id: string) {
+//     const elemento = this.el.nativeElement.querySelector(`#${id}`);
+//     if (elemento) {
+//       this.renderer.removeChild(this.el.nativeElement.querySelector('#contenedor'), elemento);
+//     }
+//   }
+
+//   eliminarElementosPorClase(clase: string) {
+//     const elementos = this.el.nativeElement.querySelectorAll(`.${clase}`);
+//     elementos.forEach((elemento: HTMLElement) => {
+//       this.renderer.removeChild(this.el.nativeElement.querySelector('#contenedor'), elemento);
+//     });
+//   }
+// }
