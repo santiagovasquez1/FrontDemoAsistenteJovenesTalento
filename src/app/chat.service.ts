@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ChatService {
-  private apiUrl = 'http://127.0.0.1:5000';
+  private apiUrl = 'http://localhost:51414/api/Consulta';
   public conversationHistory: { sender: string, message: string }[] = [];
 
   constructor(private http: HttpClient) {}
